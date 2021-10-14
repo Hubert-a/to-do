@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyDay</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial scale=1.0">
+        <link rel="stylesheet" href="../assets/css/daylist.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/myday.js"></script>
+        
+        
+    </head>
+    <body>
+        
+        <h1>MyDay</h1>
+        <div class="buttonalign">
+            <button type="button" class="button" id="button">
+                <span class="button__text">Add item</span>
+                <span class="button__icon">
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                </span>
+             </button>
+         </div>
+         
+        <div class="bg-modal">
+            <div class="modal-content">
+                <form>
+                    <label class="custom-field">
+                        <input type="text" id="input"/> 
+                        <span class="placeholder">Enter description here</span>
+                    </label>
+                    
+                    <input type="submit" value="ADD" onclick="myFunc()" id="submit">
+                    <!-- <button type="button" onclick="myFunc()">click here</button> -->
+                </form>
+            </div>
+        </div>
+        
+        <script src="../js/myday.js"></script>
+        <p id="demo"></p>
+
+        <div>
+            <div class="twobuttons" id="display">
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Edit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update list</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+                <div>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+
+            <div>
+            <label for="myRadioId" class="radio2">
+                <input type="radio" name="" id="myRadioId" class="radio__input2">
+                <div class="radio__radio2"></div>
+                Not Started
+            </label>
+            <label for="myRadioId1" class="radio1">
+                <input type="radio" name="" id="myRadioId1" class="radio__input1">
+                <div class="radio__radio1"></div>
+                In Progress   
+            </label>
+            <label for="myRadioId2" class="radio">
+                <input type="radio" name="" id="myRadioId2" class="radio__input">
+                <div class="radio__radio"></div>
+              Finished    
+            </label>
+            </div>
+        </div>
+        <script src="../js/myday.js"></script>
+        <script src="../bootstrap js/jquery.min.js"></script>    
+        <script src="../bootstrap js/bootstrap.min.js"></script>
+        <script src="../js/myday.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>
